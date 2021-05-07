@@ -1,0 +1,778 @@
+@font-face {
+    font-family:"bold";
+    src: url(NasuM-Bold-20200227.ttf);
+}
+@font-face {
+    font-family:"normal";
+    src: url(Nasu-Regular-20200227.ttf);
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color:#c9b0eb2a;
+    overflow-x: hidden;
+}
+.border{
+    margin:20px auto;
+}
+h1{
+    font-family:"bold";
+}
+p,a,li{
+    font-family:"normal";
+}
+
+a,h1,h2,h3,h4,p{
+    text-decoration: none;
+    color:rgb(61, 61, 61);
+    letter-spacing: 1px;
+}
+#en{
+    font-family:'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+@media screen and (min-width: 1000px){
+    /*  */
+    .header__inner{
+        display:none;
+    }
+    /*  */
+    header{
+        width:100%;
+        border-bottom:2px solid #bbbbbb;
+        height:90px;
+        padding-top:8px;
+        background-color:white;
+    }
+    #nav-bar3{
+        position:absolute;
+        list-style:none;
+        left:150px;
+        top:55px;
+        text-align:center;
+    }
+    
+    #nav-bar3 li{
+        display:inline-block;
+        width:auto;
+        padding:0 10px;
+        height:100%;
+        font-weight:bold;
+        border-right: 1px solid #bbbbbb;   
+        font-size:15px;
+        vertical-align:top;
+    }
+    #nav-bar3 li:last-child{
+        border-right: none;
+    }
+    /* ヘッダー１*/
+    #header1{
+        width:1100px;
+        margin:0 auto;
+        height:70px;
+        position:relative;
+        padding:5px 0;
+    }
+    #header1 img{
+        width:110px;
+        position:absolute;
+        left:0;
+        
+    }
+    #header-btn-ct{
+        height:100%;
+        width:300px;
+        position:absolute;
+        right:0;
+    }
+    #header-btn-ct a{
+        width:140px;
+        height:50px;
+        display:inline-block;
+        text-align:center;
+        border-radius:30px;
+        font-size:15px;
+        margin-top:8px;
+        filter: drop-shadow(5px 5px 5px #aaa);
+    }
+    #line-btn:hover{
+        transition:0.4s;
+        background-color:white;
+        color:#57BD37;
+        border:1px solid #57BD37;
+    }
+    #download-btn:hover{
+        background-color:white;
+        color:rgb(139, 209, 206);
+        transition:0.4s;
+        border:1px solid rgb(139, 209, 206);
+    }
+    #download-btn{
+        background-color:rgb(139, 209, 206);
+        color:white;
+    }
+    #line-btn{
+        background-color:#57BD37;
+        color:white;
+    }
+    #header-access{
+        position:absolute;
+        width:180px;
+        height:50px;
+        left:590px;
+        top:16px;
+    }
+    #header-access h1{
+        font-size:18px;
+    }
+    /* ヘッダー２ */
+    #header2{
+        width:1100px;
+        margin:0 auto;
+        height:48px;
+        text-align:center;
+    }
+    #nav-bar{
+        list-style: none;
+    }
+    #nav-bar li{
+        display:inline-block;
+        width:19%;
+        height:100%;
+        line-height:47px;
+        font-weight:bold;
+        border-right: 1px solid #bbbbbb;   
+    }
+    #nav-bar li:last-child{
+        border-right: none;
+    }
+    /* メイン */
+    main{
+        width:100%;
+    }
+    /* メインヘッダー */
+    #main-header-ct{
+        width:100%;
+        height:380px;
+        background-image: url(back-image.jpg);
+        background-size:cover ;
+        background-position: center;
+        position:relative;
+    }
+    #main-header-ct h1{
+        color:white;
+        position:absolute;
+        left:200px;
+        top:30px;
+    }
+    #main-header-ct p{
+        line-height:35px;
+        font-size:23px;
+        position:absolute;
+        left:200px;
+        top:150px;
+        color:white;
+        font-family:'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+    }
+    /* メインヘッダー〆 */
+    /* niseko-little-about-ct */
+    
+    
+    .about-span1{
+        background:linear-gradient(transparent 50%, #ffffff 0%);
+    }
+    .about-span2{
+        color:#67057D;
+        font-weight:bold;
+    }
+    /*  */
+    #little-about-ct{
+        width:1100px;
+        margin:30px auto;
+        background-color:white;
+        border-radius:20px;
+       
+        padding:20px 0;
+    }
+    
+    .feature-ct{
+   
+    }
+    .little-about-indi{
+        margin:0 auto;
+        width:1060px;
+        
+        
+        text-align:center;
+    }
+    .little-about-indi-h1{
+        font-size:43px;
+    }
+    .about-reason-indi{
+        width:32%;
+        height:370px;
+        display:inline-block;
+        vertical-align:top;
+        position:relative;
+        text-align:center;
+    }
+    .about-reason-indi img{
+        width:80px;
+        margin-top:10px;
+        
+    }
+    
+    .about-reason-indi h1{
+        font-size:17px;
+        position:absolute;
+        transform: translate(-50%,-50%);
+        left:50%;
+        top:140px;
+        width:100%;
+    
+    }
+    .about-reason-indi p{
+        width:90%;
+        margin:70px auto 0;
+        
+    }
+    /* プログラム */
+    #program-left{
+        display:inline-block;
+        width:40%;
+        vertical-align:top;
+        margin-top:30px;
+        
+    }
+    #program-left p{
+        font-weight:18px;
+    }
+    #program-left span{
+        color:#562074;
+        font-weight:bold;
+    }
+    #program-right{
+        display:inline-block;
+        vertical-align:top;
+        margin-top:30px;
+    }
+    #program-right img{
+        height:220px;
+    }
+    /* コロナ */
+    .corona-cancel{
+        width:100%;
+        
+        padding:20px 0;
+        margin-top:20px;
+    }
+    #corona-special{
+        width:90%;
+        padding:20px 0;
+        margin:20px auto;
+        background-color:#F1F0F0;
+    }
+    #corona-top-h1{
+        font-size:22px;
+        color:#FF3B7A;
+
+    }
+    
+    #corona-top-p{
+        font-size:17px;
+        margin-top:15px;
+    }
+    #corona-left{
+        width:450px;
+        display:inline-block;
+        border:2px solid #AD716B;
+        vertical-align:top;
+        height:240px;
+        margin:10px 0px 0;
+    }
+    #corona-left h1{
+        color:#AD716B;
+        margin-top:10px;
+        font-size:25px;
+    }
+    #corona-left ul{
+        text-align:left;
+        width:95%;
+        margin:20px auto 0;
+    }
+    #corona-left li{
+        list-style:none;
+    }
+    #corona-left p{
+        color:#AD716B;
+        margin-top:5px;
+        font-weight:bold;
+    }
+    #corona-right{
+        width:450px;
+        display:inline-block;
+        border:2px solid #F2A43A;
+        vertical-align:top;
+        height:240px;
+        margin:10px 0 0 0;
+    }
+    #corona-right h1{
+        color:#F2A43A;
+        margin-top:10px;
+        font-size:25px;
+    }
+    #corona-right ul{
+        list-style:none;
+        text-align:left;
+        width:95%;
+        margin:20px auto 0;
+    }
+    #corona-right li{
+        list-style:none;
+    }
+    #corona-right p{
+       color:#F2A43A;
+       margin-top:5px;
+       font-weight:bold;
+       }
+       
+    #little-about-ct a{
+        background-color:#3A4DCB;
+        color:white;
+        border-radius:20px;
+        font-weight:bold;
+        height:37px;
+        width:260px;
+        font-size:19px;
+        letter-spacing:2px;
+        padding:14px 30px;
+        line-height:37px;
+        margin:10px auto;
+        display:block;
+    }
+    /* niseko-little-about-ct〆 */
+    /* 白エリア */
+    #white-area{
+        width:100%;
+        background-color:white;
+        
+    }
+    /* ニュース */
+    #news-ct{
+        width:1100px;
+        padding-top:30px;
+        margin:30px auto;
+        text-align:center;
+    }
+    .news-double1{
+        display:inline-block;
+        vertical-align:top;
+        width:65%;
+        
+    }
+    .news-double2{
+        display:inline-block;
+        vertical-align:top;
+        width:32%;
+        
+    }
+    /* ニュース左 */
+    .news-left-indi{
+        height:300px;
+        width:100%;
+        
+    }
+    .news-left-title-p{
+        font-weight:bold;
+        text-align:center;
+        font-size:22px;
+    }
+    
+    #news-content ul{
+        margin:5px 0 ;
+    }
+    .news-banner{
+        width:100%;
+        height:80px;
+        display:inline-block;
+        vertical-align:top;
+        margin:10px 0;
+    }
+    /* ーーーーーーーーーーーーーーーーコンテンツーーーーーーーーーーーーーーーー */
+    #news-content{
+        width:94%;
+        margin:0 auto;
+        text-align:left;
+    }
+    
+    #news-content li{
+        list-style: none;
+        border-bottom:1px dotted #000;
+        padding:4px 10px;
+    }
+    #news-content time{
+        font-weight:bold;
+        margin-right:20px;
+    }
+    #news-content p{
+ 
+        color:rgb(96, 96, 150);
+    }
+    .new::after{
+        content:"NEW";
+        color: #d10606;
+        font-size: 1.1rem;
+        border: 1px solid #d10606;
+        padding: 4px 8px;
+        margin: 0 0 0 20px;
+        display: inline-block;
+        line-height: 1;
+    }
+      #see-more{
+        text-align:center;
+        margin:10px;
+    }
+    #see-more a{
+        text-decoration: underline;
+        text-align:center;
+    }
+    /* ブログ */
+    #blog-ct{
+        width:100%;
+        background-image:url(img-header-blog.jpg);
+        margin:0 auto;
+        border:1px solid;
+        height:400px;
+        text-align:center;
+        background-attachment: fixed;
+    }
+    #blog-title{
+        color:white;
+        margin:20px 0;
+        letter-spacing:2px;
+        font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+        font-size:22px;
+    }
+    #blog-container{
+        width:100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        text-align:center;
+        padding:10px 0;
+        background-color:rgba(255, 255, 255, 0.24);
+    }
+    .blog-indi{
+        height:100%;
+        width:320px;
+        margin:0 auto;
+        position:relative;
+        display:inline-block;
+        vertical-align:top;
+        margin:0 10px;
+    }
+    #blog-container {
+        overflow-x: scroll;
+        -ms-overflow-style: none;    /* IE、Edge用 */
+        scrollbar-width: none; 
+    }
+    #blog-container::-webkit-scrollbar {    /* Chrome、Safari用 */
+        display:none;
+      }
+    .blog-indi img{
+        width:100%;
+        border-radius:5px;
+    }
+    .blog-indi h1{
+        position:absolute;
+        transform:translate(-50%,-50%);
+        left:50%;
+        width:100%;
+        background-color:rgba(255, 255, 255, 0.616);
+        font-size:17px;
+        top:150px;
+        padding:8px 0;
+    }
+    /* 探す */
+    #search-ct{
+        width:1100px;
+        margin:30px auto;
+        padding-top:30px;
+        text-align:center;
+    }
+    .search-content-top{
+        width:100%;
+
+    }
+    .search-indi{
+        margin:20px 0;
+    }
+    .search-indi h1{
+        width:100%;
+        height:30px;
+        background-color:rgba(128, 128, 128, 0.473);
+        font-size:18px;
+        color:white;
+        line-height:30px;
+        margin-top:230px;
+    }
+    .search-indi1{
+        width:16%;
+        height:300px;
+
+        display:inline-block;
+        vertical-align:top;
+        background-image:url(1227316_l.jpg);
+        background-size:cover ;
+        background-position: center;
+    }
+    .search-indi2{
+        width:16%;
+        height:300px;
+        display:inline-block;
+        vertical-align:top;
+        background-image:url(brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+        background-size:cover ;
+        background-position: center;
+    }
+    .search-indi3{
+        width:16%;
+        height:300px;
+        display:inline-block;
+        vertical-align:top;
+        background-image:url(3589332_l.jpg);
+        background-size:cover ;
+        background-position: left;
+    }
+    .search-indi4{
+        width:16%;
+        height:300px;
+        display:inline-block;
+        vertical-align:top;
+        background-image:url(3348210_m.jpg);
+        background-size:cover ;
+        background-position: center;
+    }
+    .search-indi5{
+        width:16%;
+        height:300px;
+        display:inline-block;
+        vertical-align:top;
+        background-image:url(1575198_s.jpg);
+        background-size:cover ;
+        background-position: center;
+    }
+    .search-indi6{
+        width:16%;
+        height:300px;
+        display:inline-block;
+        vertical-align:top;
+        background-image:url(zb-000010-l.jpg);
+        background-size:cover ;
+        background-position: left;
+    }
+    .search-indi img{
+        width:100%;
+    }
+    .search-indi{
+        position:relative;
+    }
+    .search-indi a{
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+    }
+    .search-content-bottom{
+        width:100%;
+        height:200px;
+        border:1px solid;
+        
+    }
+    /* Q&A */
+    .question-indi{
+        width:80%;
+        margin:5px auto;
+        text-align:left;
+    }
+    #question-ct{
+        width:1100px ;
+        margin:0 auto;
+        height:700px;
+        text-align:center;
+        padding-top:20px;
+    }
+    #question-ct hr{
+        width:80%;
+        margin:0 auto;
+    }
+    .question{
+        font-size:18px;
+        padding:20px 0;
+        color:rgb(76, 76, 207);
+    }
+    .question span{
+        padding:10px;
+        border-radius:50%;
+        background-color:rgb(76, 76, 207);
+        color:white;
+        font-weight:bold;
+        margin-right:10px;
+    }
+    .answer{
+        font-size:18px;
+        padding:20px 0;
+        color:rgb(241, 134, 152);
+    }
+    .answer span{
+        padding:10px;
+        border-radius:50%;
+        background-color:rgb(241, 134, 152);
+        color:white;
+        font-weight:bold;
+        margin-right:10px;
+    }
+    /* お問い合わせ */
+    
+    #contact-ct{
+        width:100%;
+        height:300px;
+        background-image:url(DSC00702.JPG);
+        background-size:cover ;
+        background-position: center;
+        background-color:rgba(168, 168, 168, 0.724);
+        background-blend-mode:lighten;  
+        position:relative;
+        text-align:center;
+    }
+    #contact-text{
+        padding-top:20px;
+        width:1000px;
+        margin:30px auto 0;
+        left:50%;
+        height:250px;
+
+        text-align:center;
+    }
+    #contact-text a{
+        display:block;
+
+        height:80px;
+        
+        float:left;
+        margin:0 5px;
+    }
+    
+    .contact-indi{
+        width:32%;
+        height:80px;
+        margin-top:20px;
+        display:inline-block;
+        position:relative;
+        vertical-align: top;
+    }
+    .contact-indi1{
+        background-color:rgb(73, 73, 137);
+        border-bottom:5px solid rgb(45, 45, 83);
+    }
+    .contact-indi1 :hover{
+        
+    }
+    .contact-indi1 h1{
+        font-size:22px;
+    }
+    .contact-indi2{
+        background-color:#72BA4D;
+        position:relative;
+        border-bottom:5px solid #405f30;
+        
+    }
+    .contact-indi2 h2{
+        position:absolute;
+        top:20px;
+        color:white;
+        font-size:14px;
+        left:40%;
+        transform:translate(-50%,-50%);
+    }
+    .contact-indi2 h1{
+        position:absolute;
+        left:40%;
+        top:20px;
+        font-size:22px;
+        transform:translate(-50%,-50%);
+    }
+    
+    .contact-indi2 img{
+        position:absolute;
+        width:70px;
+        border-radius:10px;
+        transform:translate(-50%,-50%);
+        top:50%;
+        right:-20px;
+    }
+    .contact-indi3{
+        background-color:rgb(192, 192, 192);
+        border-bottom:5px solid rgb(88, 88, 88);
+    }
+    
+    .contact-indi3 h2{
+        position:absolute;
+        top:20px;
+        color:white;
+        font-size:14px;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    .contact-indi3 h1{
+        position:absolute;
+        left:50%;
+        top:20px;
+        font-size:22px;
+        transform:translate(-50%,-50%);
+    }
+    .contact-indi3 img{
+        position:absolute;
+        transform:translate(-50%,-50%);
+        top:50%;
+        left:12%;
+    }
+    .contact-indi1 h2{
+        transform: translate(-50%,-50%);
+        left:50%;
+        width:100%;
+    }
+    .contact-indi a{
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        display:block;
+    }
+    
+    #contact-ct h1{
+        color:white;
+        
+        margin-top:30px;
+        
+    }
+    #contact-ct p{
+        color:white;
+        font-size:16px;
+        margin-top:20px;
+        
+    }
+    
+    /* footer */
+    footer{
+        width:100%;
+        height:400px;
+        background-color:rgba(128, 128, 128, 0.259);
+    }
+}
