@@ -1,11 +1,3 @@
-/*
-Theme Name: koala-wp
-Theme URL: programingbeginer.biz/
-Description: サンプルテーマ
-Version: 2.0
-Author: koala
-Authour URL: programingbeginer.biz/
-*/
 *{
     margin:0;
     padding:0;
@@ -224,7 +216,7 @@ a,h1,p{
     /* niseko-little-about-ct */ 
     #little-about-ct{
         width:95%;
-        padding:20px;
+        padding:20px 0;
         margin:30px auto;
         background-color:white;
         border-radius:20px;
@@ -479,6 +471,7 @@ a,h1,p{
     #news-ct{
         width:95%;
         padding-top:30px;
+        border:1px solid;
         margin:30px auto;
         text-align:center;
 
@@ -496,6 +489,7 @@ a,h1,p{
         
     }
     .news-left-title-p{
+        font-weight:bold;
         text-align:center;
         font-size:22px;
     }
@@ -589,7 +583,6 @@ a,h1,p{
     #blog-container {
         overflow-x: scroll;
         -ms-overflow-style: none;    /* IE、Edge用 */
-        scrollbar-width: none; 
     }
     #blog-container::-webkit-scrollbar {    /* Chrome、Safari用 */
         display:none;
@@ -631,7 +624,7 @@ a,h1,p{
         line-height:50px;
     }
     .question span{
-        padding:10px;
+        padding:10px 0;
         border-radius:50%;
         background-color:rgb(76, 76, 207);
         color:white;
@@ -645,7 +638,7 @@ a,h1,p{
         line-height:50px;
     }
     .answer span{
-        padding:10px;
+        padding:10px 0;
         border-radius:50%;
         background-color:rgb(241, 134, 152);
         color:white;
