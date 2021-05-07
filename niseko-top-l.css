@@ -743,6 +743,7 @@ a,h1,h2,h3,h4,p{
         top:20px;
         font-size:22px;
         transform:translate(-50%,-50%);
+        width:100%;
     }
     .contact-indi3 img{
         position:absolute;
