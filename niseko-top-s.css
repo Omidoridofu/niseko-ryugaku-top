@@ -471,7 +471,6 @@ a,h1,p{
     #news-ct{
         width:95%;
         padding-top:30px;
-        border:1px solid;
         margin:30px auto;
         text-align:center;
 
@@ -489,7 +488,6 @@ a,h1,p{
         
     }
     .news-left-title-p{
-        font-weight:bold;
         text-align:center;
         font-size:22px;
     }
