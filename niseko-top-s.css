@@ -20,7 +20,7 @@ body{
 .border{
     margin:20px auto;
 }
-h1{
+h1,h2{
     font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
 }
 p,a{
