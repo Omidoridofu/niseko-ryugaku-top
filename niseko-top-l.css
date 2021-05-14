@@ -28,15 +28,14 @@ body{
 .border{
     margin:20px auto;
 }
-h1{
-    font-family:"bold";
+h1,h2{
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
 }
 p,a,li{
-    font-family:"normal";
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
 }
 
 a,h1,h2,h3,h4,p{
-    text-decoration: none;
     color:rgb(61, 61, 61);
     letter-spacing: 1px;
 }
@@ -48,6 +47,9 @@ a,h1,h2,h3,h4,p{
     .header__inner{
         display:none;
     }
+    header a{
+        text-decoration:none;
+    }
     /*  */
     header{
         width:100%;
@@ -55,6 +57,7 @@ a,h1,h2,h3,h4,p{
         height:90px;
         padding-top:8px;
         background-color:white;
+        text-decoration:none;
     }
     #nav-bar3{
         position:absolute;
@@ -194,7 +197,7 @@ a,h1,h2,h3,h4,p{
         background:linear-gradient(transparent 50%, #ffffff 0%);
     }
     .about-span2{
-        color:#67057D;
+    
         font-weight:bold;
     }
     /*  */
@@ -207,22 +210,19 @@ a,h1,h2,h3,h4,p{
         padding:20px 0;
     }
     
-    .feature-ct{
-   
-    }
+    
     .little-about-indi{
         margin:0 auto;
-        width:1060px;
+        width:1090px;
         
         
         text-align:center;
     }
     .little-about-indi-h1{
-        font-size:43px;
+        font-size:37px;
     }
     .about-reason-indi{
         width:32%;
-        height:370px;
         display:inline-block;
         vertical-align:top;
         position:relative;
@@ -270,6 +270,81 @@ a,h1,h2,h3,h4,p{
     }
     #program-right img{
         height:220px;
+    }
+    /* ニュー */
+    .little-about-indi-h1{
+        color:#7954adc5;
+    }
+    .popular-indi{
+        width:85%;
+        margin:20px auto;
+    }
+
+    .popular-indi img{
+        width:80px;
+    }
+    .popular-indi h1{
+        font-size:20px;
+        margin:8px 0;
+    }
+    /* 比較 */
+    .compare-indi{
+        margin:0 4px;
+        width:28%;
+        display:inline-block;
+        vertical-align:top;
+    }
+    .compare-indi h1{
+        font-size:24px;
+        padding:2px 5px;
+        
+    }
+    .compare-indi-niseko span{
+        background:linear-gradient(transparent 60%, #c9b0eb62 0%);
+    }
+    .compare-indi-phili span{
+        background:linear-gradient(transparent 60%, #ecd09c65 0%);
+    }
+    .compare-indi-us span{
+        background:linear-gradient(transparent 60%, #afd6cd65 0%);
+    }
+    .compare-top{
+        width:100%;
+        
+        text-align:left;
+        margin-bottom:10px;
+        padding:5px 0;
+    }
+    .compare-top p{
+        line-height:26px;
+        padding-left:8px;
+    }
+    .compare-bottom{
+        
+        width:100%;
+        text-align:left;
+        padding:5px 0;
+    }
+    .compare-bottom p{
+        line-height:26px;
+        padding-left:8px;
+    }
+    .compare-niseko{
+        background-color:#c9b0eb62;
+    }
+    .compare-phili{
+        background-color:#ecd09c65;
+    }
+    .compare-us{
+        background-color:#afd6cd65;
+    }
+    .compare-top h2{
+        font-size:18px;
+        text-align:center;
+    }
+    .compare-bottom h2{
+        font-size:18px;
+        text-align:center;
     }
     /* コロナ */
     .corona-cancel{
@@ -632,6 +707,9 @@ a,h1,h2,h3,h4,p{
         font-weight:bold;
         margin-right:10px;
     }
+    .question-ct a{
+        text-decoration: underline;
+    }
     .answer{
         font-size:18px;
         padding:20px 0;
@@ -743,7 +821,6 @@ a,h1,h2,h3,h4,p{
         top:20px;
         font-size:22px;
         transform:translate(-50%,-50%);
-        width:100%;
     }
     .contact-indi3 img{
         position:absolute;
@@ -778,6 +855,7 @@ a,h1,h2,h3,h4,p{
         
     }
     
+    /* footer */
     /* footer */
     footer{
         width:100%;
@@ -856,56 +934,5 @@ a,h1,h2,h3,h4,p{
     }
     .footer-3 p{
         font-size:22px;
-    }
-    /* 一つめ */
-    #exp-left-container{
-        width:100%;
-        margin:20px auto;
-        background-color:white;
-        padding-top:10px;
-        padding-bottom:10px;
-    }
-    #exp-person-ct{
-        width:95%;
-        margin:10px auto 30px;
-        filter: drop-shadow(0px 0px 0px #aaa);
-        border:1px solid rgba(128, 128, 128, 0.322);
-        padding:10px 0;
-        background-color:rgba(128, 128, 128, 0.067);
-    }
-    #exp-person-ct h1{
-        padding:0 20px;
-    }
-    #exp-person-ct p{
-        padding:0 20px;
-    }
-    .exp-question{
-        width:95%;
-        margin:0 auto;
-        padding:1px 0;
-        background-color:#c9b0eb2a;
-        border:2px solid #c9b0eb94;
-        line-height:40px;
-        
-    }
-    .exp-question p{
-        padding-left:20px;
-        font-weight:bold;
-    }
-    .exp-answer{
-        width:95%;
-        margin:10px auto 20px;
-    }
-    .exp-answer p{
-        padding-left:20px;
-    }
-    #tsuite{
-        text-align:center;
-        font-size:22px;
-        margin:20px 0;
-    }
-    #exp-top-heading{
-        font-size:20px;
-        text-align:center;
     }
 }
