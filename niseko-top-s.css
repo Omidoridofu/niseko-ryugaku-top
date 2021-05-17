@@ -7,6 +7,8 @@ Author: koala
 Authour URL: programingbeginer.biz/
 */
 
+
+
 *{
     margin:0;
     padding:0;
@@ -14,46 +16,110 @@ Authour URL: programingbeginer.biz/
 body{
     margin:0;
     padding:0;
+    background-color:#c9b0eb2c;
     overflow-x: hidden;
-    background-color:#c9b0eb2a;
 }
 .border{
     margin:20px auto;
 }
-h1,h2{
-    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
-}
-p,a{
-    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
-}
-a,h1,p{
+
+a,h1,h2,h3,h4,p{
+    text-decoration: none;
     color:rgb(61, 61, 61);
     letter-spacing: 1px;
 }
-@media screen and (max-width: 1000px){
+
+@media screen and (max-width: 750px){
     header{
         width:100%;
-        border-bottom:2px solid #bbbbbb;
-        height:90px;
-        background-color:#eee5f0;
+        border-bottom:2px solid #ECECEC;;
+        height:70px;
+        background-color:white;
         
     }
     
-    #header1{
-        text-align:center;
-    }
-    #header1 img{
-        width:110px;
-        
+    
+    .niseko-top-logo{
+        height:40px;
+        margin-left:20px;
+        margin-top:18px;
     }
     #header-access{
         display:none;
     }
-    #header-btn-ct{
+    .header-btn-l{
         display:none;
     }
     #nav-bar3{
         display:none;
+    }
+    .header-tell-s{
+        vertical-align:top;
+        position:absolute;
+        top:22px;
+        right:17%;
+    }
+    .header-tell-s img{
+        width:12px;
+        padding-top:8px;
+    }
+    .header-tell-s h1{
+        font-size:12px;
+    }
+    /*  */
+    .header-btn-ct{
+        text-align:center;
+        margin-top:30px;
+    }
+    .btn-indi{
+        height:60px;
+        margin:0 auto 10px;
+        position:relative;
+        text-align:center;
+        padding:0 6px;
+        transition:0.4s;
+        border-radius:10px;
+        width:160px;
+    }
+    
+    .btn-indi:hover{
+        opacity:0.5;
+    }
+    .btn-indi a{
+        position:absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        z-index:99;
+        display:block;
+    }
+    
+    .btn-indi h1{
+        font-size:13px;
+        position:absolute;
+        transform:translate(-50%,-50%);
+        left:50%;
+        top:80%;
+        width:100%;
+        color:white;
+    }
+    
+    .line-btn{
+        background-color:#53B535;
+        border:1px solid #53B535;
+        
+        z-index:1px;
+        
+    }
+    
+    .btn-indi img{
+        height:40px;
+        width:40px;
+        z-index:1px;
+    }
+    .download-btn{
+        background-color:rgb(83, 83, 83);
     }
     /* メイン */
     main{
@@ -65,10 +131,7 @@ a,h1,p{
     
         width: 100%;
       }
-      .header li {
-        list-style-type: none;
-        margin-top: 30px;
-      }
+      
       
       .sideMenu {
         background-color: #fff;
@@ -76,20 +139,31 @@ a,h1,p{
         overflow-y: auto;
         padding-top: 56px;
         position: fixed;
-        right: -200px;
+        right: -50%;
         transition: all 0.6s;
         top: 0;
-        width: 200px;
+        width: 50%;
         z-index: 200;
-        border:1px solid;
       }
-      
+
+      .sideMenu hr{
+          width:60%;
+          margin:0 auto;
+      }
+      .sideMenu a{
+          height:55px;
+          font-size:18px;
+          width:100%;
+          display:block;
+          line-height:55px;
+          margin-bottom:-23px;
+      }
       .hamburger {
         cursor: pointer;
         height: 56px;
         position: fixed;
-        right: 20px;
-        top: 0;
+        right: 10px;
+        top: -15px;
         width: 56px;
         z-index: 300;
       }
@@ -129,7 +203,7 @@ a,h1,p{
         right: 0;
       }
       .nav-open .hamburger__lineTop {
-        top: 26px;
+        top: 40px;
         transform: rotate(45deg);
       }
       .nav-open .hamburger__lineCenter {
@@ -137,7 +211,7 @@ a,h1,p{
         width: 0;
       }
       .nav-open .hamburger__lineBottom {
-        top: 26px;
+        top: 40px;
         transform: rotate(-45deg);
       }
       .nav-open .overlay {
@@ -150,39 +224,18 @@ a,h1,p{
         width: 80%;
       }
       
-      nav{
-        text-align: center;
-      }
-    
-      .logo-img{
-        width:300px;
-      }
-      .menu-img{
-        height:80px;
-        padding:10px 0;
-      }
-      nav i{
-        font-size:30px;
-        float: left;
-        margin-left:20px;
-      }
-      .sideMenu :hover{
-        opacity:0.4;
+      
+      .menu-img-a:hover{
+        opacity:0.3;
         transition:0.5s;
       }
       .sideMenu a{
         transition:0.5s;
       }
-      .menu-indi{
-          margin:20px 0;
-      }
-      .menu-indi li{
-          font-weight:bold;
-      }
     /* メインヘッダー */
     #main-header-ct{
         width:100%;
-        height:300px;
+        height:330px;
         background-image: url(back-image.jpg);
         background-size:cover ;
         background-position: center;
@@ -223,6 +276,30 @@ a,h1,p{
         margin:0 auto;
         text-align:center;
     }
+    .exp-more-btn{
+        color:white;
+        font-size:18px;
+        text-decoration: underline;
+        padding:10px 150px;
+        background-color:#7a3d88;
+        border-radius:10px;
+        transition:0.3s;
+        font-size:20px;
+        padding:8px 0;
+        margin:0 auto;
+        text-align:center;
+        display:block;
+        height:30px;
+        width:95%;
+        position:absolute;
+        transform:translate(-50%,-50%) ;
+        left:50%;
+        bottom:-10px;
+    }
+    .exp-more-btn:hover{
+        transition:0.3s;
+        opacity:0.6;
+    }
     /* niseko-little-about-ct */ 
     #little-about-ct{
         width:95%;
@@ -262,7 +339,7 @@ a,h1,p{
     }
     
     
-    #little-about-ct a{
+    .about-more-btn{
         background-color:#3A4DCB;
         color:white;
         border-radius:20px;
@@ -271,7 +348,11 @@ a,h1,p{
         font-size:19px;
         letter-spacing:2px;
         padding:14px 20px;
-        
+        transition:0.5s;
+    }
+    .about-more-btn:hover{
+        opacity:0.6;
+        transition:0.5s;
     }
     /* 探す */
     #search-ct{
@@ -465,7 +546,7 @@ a,h1,p{
     .corona-cancel{
         width:100%;
         
-        padding:20px 0;
+        padding:8px 0;
         margin-top:10px;
     }
     #corona-special{
@@ -729,7 +810,21 @@ a,h1,p{
         font-weight:bold;
         margin-right:10px;
     }
-
+    .question-to-link{
+        background-color:#606060;
+        color:white;
+        border-radius:20px;
+        font-weight:bold;
+        height:42px;
+        font-size:19px;
+        letter-spacing:2px;
+        padding:14px 20px;
+        transition:0.5s;
+    }
+    .question-to-link:hover{
+        transition:0.5s;
+        opacity:0.3;
+    }
     /* お問い合わせ */
     
     #contact-ct{
@@ -865,10 +960,7 @@ a,h1,p{
         margin-top:20px;
         
     }
-    footer{
-        width:100%;
-        height:400px;
-    }
+    
     /* footer */
     footer{
         width:100%;
@@ -882,13 +974,12 @@ a,h1,p{
         margin:0 auto;
     }
     .footer-1{
-        width:48%;
-        height:300px;
+        width:85%;
+        padding-bottom:20px;
         
-        padding-top:20px;
-        display:inline-block;
-        vertical-align:top;
-        border-right:2px solid rgb(91, 91, 91);
+        padding-top:5px;
+        margin:0 auto;
+        border-bottom:2px solid rgba(0, 0, 0, 0.211);
     }
     .footer-1 h1{
         color:rgb(91, 91, 91);
@@ -903,12 +994,13 @@ a,h1,p{
         text-decoration: underline;
     }
     .footer-2{
-        width:48%;
-        height:300px;
+        width:85%;
         
-        padding-top:20px;
-        display:inline-block;
-        vertical-align:top;
+        
+        padding:20px 0;
+        margin:0 auto;
+        
+        
         text-align:center;
     }
     .footer-2 h1{
