@@ -1,5 +1,3 @@
-
-
 /*
 Theme Name: koala-wp
 Theme URL: programingbeginer.biz/
@@ -8,64 +6,49 @@ Version: 2.0
 Author: koala
 Authour URL: programingbeginer.biz/
 */
-@font-face {
-    font-family:"bold";
-    src: url(NasuM-Bold-20200227.ttf);
-}
-@font-face {
-    font-family:"normal";
-    src: url(Nasu-Regular-20200227.ttf);
-}
+
+
 
 *{
     margin:0;
     padding:0;
+    font-family:'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
 }
 body{
     margin:0;
     padding:0;
-    background-color:#c9b0eb2a;
+    background-color:#c9b0eb2c;
     overflow-x: hidden;
 }
 .border{
     margin:20px auto;
 }
-h1,h2{
-    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
-}
-p,a,li{
-    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
-}
+
 
 a,h1,h2,h3,h4,p{
+    text-decoration: none;
     color:rgb(61, 61, 61);
     letter-spacing: 1px;
 }
-#en{
-    font-family:'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
-}
-@media screen and (min-width: 1000px){
+
+@media screen and (min-width: 750px){
     /*  */
     .header__inner{
         display:none;
     }
-    header a{
-        text-decoration:none;
+    .header-tell-s{
+        display:none;
     }
     /*  */
     header{
         width:100%;
-        border-bottom:2px solid #bbbbbb;
-        height:90px;
+        border-bottom:1px solid #ECECEC;
+        
         padding-top:8px;
         background-color:white;
-        text-decoration:none;
     }
     #nav-bar3{
-        position:absolute;
         list-style:none;
-        left:350px;
-        top:55px;
         text-align:center;
     }
     
@@ -90,65 +73,100 @@ a,h1,h2,h3,h4,p{
         position:relative;
         padding:5px 0;
     }
-    #header1 img{
-        width:110px;
+    .niseko-top-logo{
+        height:70px;
         position:absolute;
         left:0;
+        top:-2px;
         
     }
-    #header-btn-ct{
-        height:100%;
-        width:300px;
+    .header-btn-ct{
+        height:60px;
+
         position:absolute;
         right:0;
     }
-    #header-btn-ct a{
-        width:140px;
-        height:50px;
+    .btn-indi{
+        height:100%;
         display:inline-block;
+        vertical-align:top;
+        position:relative;
         text-align:center;
-        border-radius:30px;
-        font-size:15px;
-        margin-top:8px;
-        filter: drop-shadow(5px 5px 5px #aaa);
-    }
-    #line-btn:hover{
+        padding:0;
         transition:0.4s;
-        background-color:white;
-        color:#57BD37;
-        border:1px solid #57BD37;
+        border-radius:10px;
     }
-    #download-btn:hover{
-        background-color:white;
-        color:rgb(139, 209, 206);
-        transition:0.4s;
-        border:1px solid rgb(139, 209, 206);
+    .header-tell-ct{
+        display:inline-block;
+        vertical-align:top;
+        height:100%;
+        width:200px;
+
     }
-    #download-btn{
-        background-color:rgb(139, 209, 206);
-        color:white;
+    .header-tell-ct img{
+        width:18px;
+        padding-top:8px;
     }
-    #line-btn{
-        background-color:#57BD37;
-        color:white;
+    .header-tell-ct h1{
+        font-size:17px;
+        padding-top:32px;
     }
-    #header-access{
+    .btn-indi:hover{
+        opacity:0.5;
+    }
+    .btn-indi a{
         position:absolute;
-        width:180px;
-        height:50px;
-        left:590px;
-        top:16px;
+        width:100%;
+        height:100%;
+        
+        top:0;
+        left:0;
+        z-index:99;
+        display:block;
     }
-    #header-access h1{
-        font-size:18px;
+    
+    .btn-indi h1{
+        font-size:15px;
+        position:absolute;
+        transform:translate(-50%,-50%);
+        left:50%;
+        top:80%;
+        width:100%;
+        color:white;
+    }
+    .tell-btn{
+        width:120px;
+    }
+    .line-btn{
+        width:180px;
+        background-color:#53B535;
+        border:1px solid #53B535;
+        
+        z-index:1px;
+        
+    }
+    
+    .btn-indi img{
+        height:40px;
+        width:40px;
+        z-index:1px;
+    }
+    .download-btn{
+        width:200px;
+        background-color:rgb(83, 83, 83);
+    }
+    
+
+   
+    
+    
+    #header-2{
+        padding:8px 0;
+        border-top:1px solid #ECECEC;
     }
     /* ヘッダー２ */
-    #header2{
-        width:1100px;
-        margin:0 auto;
-        height:48px;
-        text-align:center;
-    }
+    
+   
     #nav-bar{
         list-style: none;
     }
@@ -289,6 +307,30 @@ a,h1,h2,h3,h4,p{
         font-size:20px;
         margin:8px 0;
     }
+    .exp-more-btn{
+        color:white;
+        font-size:18px;
+        text-decoration: underline;
+        padding:10px 150px;
+        background-color:#7a3d88;
+        border-radius:10px;
+        transition:0.3s;
+        font-size:23px;
+        padding:8px 0;
+        margin:0 auto;
+        text-align:center;
+        display:block;
+        height:40px;
+        width:1100px;
+        position:absolute;
+        transform:translate(-50%,-50%) ;
+        left:50%;
+        top:88%;
+    }
+    .exp-more-btn:hover{
+        transition:0.3s;
+        opacity:0.6;
+    }
     /* 比較 */
     .compare-indi{
         margin:0 4px;
@@ -309,6 +351,16 @@ a,h1,h2,h3,h4,p{
     }
     .compare-indi-us span{
         background:linear-gradient(transparent 60%, #afd6cd65 0%);
+    }
+
+    .price-compare-vip{
+        background-color:#D68AC4;
+    }
+    .price-compare-regular{
+        background-color:#FDE1AD;
+    }
+    .price-compare-light{
+        background-color:#ACEBAB;
     }
     .compare-top{
         width:100%;
@@ -425,7 +477,7 @@ a,h1,h2,h3,h4,p{
        font-weight:bold;
        }
        
-    #little-about-ct a{
+    .about-more-btn{
         background-color:#3A4DCB;
         color:white;
         border-radius:20px;
@@ -438,6 +490,11 @@ a,h1,h2,h3,h4,p{
         line-height:37px;
         margin:10px auto;
         display:block;
+        transition:0.5s;
+    }
+    .about-more-btn:hover{
+        transition:0.5s;
+        opacity:0.6;
     }
     /* niseko-little-about-ct〆 */
     /* 白エリア */
@@ -681,25 +738,26 @@ a,h1,h2,h3,h4,p{
     }
     /* Q&A */
     .question-indi{
-        width:80%;
+        width:60%;
         margin:5px auto;
         text-align:left;
     }
     #question-ct{
-        width:1100px ;
+        width:100% ;
         margin:0 auto;
-        height:700px;
         text-align:center;
-        padding-top:20px;
+        padding:20px 0;
+        background-color:rgba(128, 128, 128, 0.19);
     }
     #question-ct hr{
-        width:80%;
+        width:55%;
         margin:0 auto;
     }
     .question{
         font-size:18px;
-        padding:20px 0;
+        padding:20px 0 8px;
         color:rgb(76, 76, 207);
+        line-height:33px;
     }
     .question span{
         padding:10px;
@@ -709,13 +767,30 @@ a,h1,h2,h3,h4,p{
         font-weight:bold;
         margin-right:10px;
     }
-    .question-ct a{
-        text-decoration: underline;
+    .question-to-link{
+        background-color:#606060;
+        color:white;
+        border-radius:20px;
+        font-weight:bold;
+        height:37px;
+        width:260px;
+        font-size:19px;
+        letter-spacing:2px;
+        padding:14px 30px;
+        line-height:37px;
+        margin:10px auto;
+        display:block;
+        transition: 0.5s;
+    }
+    .question-to-link:hover{
+        transition:0.5s;
+        opacity:0.3;
     }
     .answer{
         font-size:18px;
         padding:20px 0;
         color:rgb(241, 134, 152);
+        line-height:33px;
     }
     .answer span{
         padding:10px;
@@ -741,7 +816,7 @@ a,h1,h2,h3,h4,p{
     #contact-text{
         padding-top:20px;
         width:1000px;
-        margin:30px auto 0;
+        margin:0px auto 0;
         left:50%;
         height:250px;
 
@@ -822,6 +897,7 @@ a,h1,h2,h3,h4,p{
         left:50%;
         top:20px;
         font-size:22px;
+        width:100%;
         transform:translate(-50%,-50%);
     }
     .contact-indi3 img{
@@ -842,6 +918,7 @@ a,h1,h2,h3,h4,p{
         width:100%;
         height:100%;
         display:block;
+        text-decoration: none;
     }
     
     #contact-ct h1{
